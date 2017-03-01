@@ -3,9 +3,11 @@
 import nltk
 from nltk import word_tokenize
 
-txt = open("0", "r").read()
+txt = "Hello my name is John Doe and my favourite number is twenty-seven"
 
 tokens = word_tokenize(txt)
 pos = nltk.pos_tag(tokens)
 
-print(pos)
+ptree = nltk.ne_chunk(pos, binary=True)
+
+ptree.draw()
