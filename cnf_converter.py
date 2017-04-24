@@ -51,7 +51,7 @@ for rule in rules:
 for rule in rules2:
     left = re.findall("([A-Z]+[A-Za-z0-9]*)\s->",rule)  #left side of rules
     right = re.findall("->([^\n\t]+)", rule)        #right side of rules
-    rt_nt = re.findall("([A-Z]+[A-Za-z0-9]*)\s",right[0])   #List of right non-terminals
+    rt_nt = re.findall("([A-Z]+[A-Za-z0-9]*)",right[0])   #List of right non-terminals
     if len(rt_nt) >= 3:
         new_nt = "Y" + str(ctr) #New Non terminal
         ctr = ctr + 1
