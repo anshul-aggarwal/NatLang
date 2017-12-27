@@ -1,7 +1,7 @@
 #Minimum edit distance
 
-word1 = "INTENTION"
-word2 = "EXECUTION"
+word1 = "OXFORD"
+word2 = "EXCEL"
 
 len_1=len(word1)
 len_2=len(word2)
