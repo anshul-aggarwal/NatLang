@@ -1,8 +1,5 @@
 #Minimum edit distance
 
-import nltk
-import re
-
 word1 = "INTENTION"
 word2 = "EXECUTION"
 
